@@ -1,0 +1,6 @@
+[submodule "pkgs/phd-utils"]
+	path = pkgs/phd-utils
+	url = https://yannik_rist@bitbucket.org/yannik_rist/phd-utils.git
+[submodule "pkgs/oru"]
+	path = pkgs/oru
+	url = https://yannik_rist@bitbucket.org/yannik_rist/oru.git
