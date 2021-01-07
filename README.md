@@ -12,20 +12,20 @@ If you already have a Conda environment with this name, change the `name` field 
 (eg `CONDA_ENV="darp-env"`).
 
 Then run the setup script.
-```shell script
+```
 ./setup.sh
 ```
 
 # Running
 Before running anything make sure the correct Conda environment is selected:
-```shell script
+```
 conda activate darp
 ```
 There are two script files: `data_indices.py` and `darp_restricted_fragments.py`.  
 
 The main script is `darp_restricted_fragments.py` and requires one mandatory argument, which is an integer index into 
 the problem set.  The available instances and their corresponding index can be viewed with the other script:
-```shell script
+```
 python data_indices.py -m all
 0 a2-16
 1 a2-20
@@ -36,12 +36,12 @@ python data_indices.py -m all
 ...
 ```
 So to solve instance `a2-16`, run
-```shell script
+```
 python -O darp_restricted_fragments.py 0
 ```
-For the instances used by Gwschind and Irnich (2015), which extend the time windows of requests, use the ``--extend``
+For the instances used by Gwschind and Irnich (2015), which extend the time windows of requests, use the `--extend`
 parameter with a value of `3`.  For example,
-  ```shell script
+```
 python -O darp_restricted_fragments.py --extend 3 0
 ```
 solves `a2-16` with widened time windows.  Note the `-O` flag to Python, which skips debug assertions.  Performance
