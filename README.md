@@ -1,6 +1,6 @@
 # Installation
 ##  Requirements
-The code requires a working install of the `conda` package manager.  Miniconda, a minimal conda installation can 
+The code requires a working install of the `conda` package manager.  Miniconda, a minimal conda installation, can 
 be found [here](https://docs.conda.io/en/latest/miniconda.html).  
 
 A valid Gurobi license is required as well, see [here](https://www.gurobi.com/downloads/end-user-license-agreement-academic/).
@@ -47,4 +47,7 @@ python -O darp_restricted_fragments.py --extend 3 0
 solves `a2-16` with widened time windows.  Note the `-O` flag to Python, which skips debug assertions.  Performance
 will suffer if this flag is not supplied.
 
+The `darp_restricted_fragments.py` script will create log directories under `./logs/darp/rf/`. 
+
 Further documentation can be found using the `--help` flags on both scripts.
+
