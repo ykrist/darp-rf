@@ -1,9 +1,17 @@
 # Installation
 ##  Requirements
-The code requires a working install of the `conda` package manager.  Miniconda, a minimal conda installation, can 
-be found [here](https://docs.conda.io/en/latest/miniconda.html).  
+Git Large-File-Storage (LFS) is required to clone the repository.
+
+The Python code requires a working install of the `conda` package manager.  Miniconda, a minimal conda installation, 
+can be found [here](https://docs.conda.io/en/latest/miniconda.html).  
 
 A valid Gurobi license is required as well, see [here](https://www.gurobi.com/downloads/end-user-license-agreement-academic/).
+
+## Clone 
+Clone the repository with 
+```
+git clone --recurse-submodules https://github.com/ykrist/darp-rf.git
+```
 
 ## Setup script
 The setup script `setup.sh` will create a Conda environment called `darp` and install all the relevant Python packages.
